@@ -8,6 +8,7 @@ const app = express();
 /* seteamos un puerto a mi web server*/
 app.set("port",5000)
 
+app.use(express.json());
 app.use(cors());
 
 /*Routes*/
