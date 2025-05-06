@@ -20,5 +20,9 @@ app.use("/api/empleados/",CategoriasEmpleados)
 app.use("/api/clientes/",CategoriasClientes)
 app.use("/api/productos/",CategoriasProductos)
 
+app.get('/', (req, res) => {
+    res.send('REST API EN RENDER WITHOUT DATABASE ENDPOINTS');
+  });
+
 /* hacemos disponible a toda mi app*/
 export default app;
