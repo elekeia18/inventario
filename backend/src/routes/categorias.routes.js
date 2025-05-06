@@ -15,4 +15,11 @@ router.delete("/:id", categoriaController.deletecategory);// crud delete 1 fila
 /*ruta que recibe un parametro a modificar*/
 router.put("/:id", categoriaController.updatecategory);// crud update 1 fila
 /*Hacemos Disponible Al Router En Toda la aplicacion */
+
+
+//Parcial Endpoints 
+//router.get("/", categoriaController.getEmpleados); //crud read
+
+
+
 export default router;
