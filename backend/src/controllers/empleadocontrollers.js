@@ -1,4 +1,4 @@
-import getConnection from "./../DB/database.js"
+/*import getConnection from "./../DB/database.js"
 
 //Parcial Endpoints
 
@@ -19,4 +19,4 @@ const getEmpleados = async (req, res) => {
 export const methodHTTP2 = {
     getEmpleados,
 
-    }
+    }*/

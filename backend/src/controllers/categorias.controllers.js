@@ -1,4 +1,33 @@
-import getConnection from "./../DB/database.js"
+import Categorias from "../Models/Categorias.js";
+
+const obtenerCategorias = async (req, res) => {
+    try {
+        const categorias = await Categorias.find();
+        res.json(categorias);
+    } catch (error) {
+        console.error("Error al obtener las categorías:", error);
+        res.status(500).json({ message: "Error al obtener las categorías" });
+    }
+}
+
+export{ obtenerCategorias }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*import getConnection from "./../DB/database.js"
 
 const getcategorias = async (req, res) => {
 
@@ -85,34 +114,16 @@ const updatecategory = async (req, res)=>{
         res.status(500).json({ message: "Error retrieving categories" });
     }
 }
-
-//Parcial Endpoints
-
-/*const getEmpleados = async (req, res) => {
-    try {
-        const connection = await getConnection();
-
-        const result = await connection.query("SELECT * FROM empleados");
-
-        res.json(result);
-    } 
-    catch (error) {
-        console.log(error);
-        res.status(500).json({ message: "Error retrieving employees" });
-    }
-}*/
+*/
 
 
-
-
-
-
-export const methodHTTP = {
+/*export const methodHTTP = {
 getcategorias,
     postCategorias,
     getcategory,
     deletecategory,
     updatecategory,
 
-   // getEmpleados*/
 }
+*/
+

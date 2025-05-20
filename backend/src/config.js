@@ -1,5 +1,7 @@
 import { config } from "dotenv";
+import conectarDB from "./DB/database";
 
+/*
 config();
 
 export default {
@@ -9,3 +11,4 @@ export default {
     password: process.env.PASSWORD,
 
 }
+*/

@@ -1,4 +1,4 @@
-import getConnection from "./../DB/database.js"
+/*import getConnection from "./../DB/database.js"
 
 const updateProducto = async (req, res) => {
     try {
@@ -25,3 +25,4 @@ export const methodHTTP4 = {
     updateProducto,
 
     }
+    */

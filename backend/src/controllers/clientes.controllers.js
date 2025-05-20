@@ -1,4 +1,4 @@
-import getConnection from "./../DB/database.js"
+/*import getConnection from "./../DB/database.js"
 
 const postClientes = async (req, res) => {
     try {
@@ -30,4 +30,4 @@ const postClientes = async (req, res) => {
 export const methodHTTP3 = {
     postClientes
 
-    }
+    }*/
